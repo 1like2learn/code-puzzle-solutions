@@ -6,6 +6,8 @@ class Solution:
             ']': '[', 
             ')': '('
         }
+        # The stack represents the open parenthesis. The most recent parenthesis
+        # needs to be the first to be closed.
         stack = []
         for char in s:
             if char in openingChar:
